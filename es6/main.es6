@@ -1,12 +1,9 @@
 'use strict';
-var getPrice = () => 5.99;
-var getPrice2 = (count) => count* 4.00; // 1 parameter called count
-var getPrice3 = (count, tax) => count * tax * 3.00; // 2 parameters
+var function_with_default_param = function(productId = 1000) {
+    console.log(productId);
+};
 
-console.log(typeof getPrice); // function
-console.log(getPrice); // the function
-console.log(getPrice()); // 5.99
+var function_with_default_param_2 = (productId = 3000) => console.log(productId);
 
-console.log(getPrice2(2)); // 8
-
-console.log(getPrice3(2 ,3)); // 18
+function_with_default_param();
+function_with_default_param_2();
