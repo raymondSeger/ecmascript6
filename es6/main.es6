@@ -2,21 +2,12 @@
 
 class Task {
 
-    constructor() {
-        this.location = 'jakarta';
-    }
-
-}
-
-let task = new Task();
-console.log( task.location ); // jakarta
-
-class TaskChild extends Task {
-    constructor() {
-        super();
-        this.location = 'jakarta barat';
+    static get_default_id() {
+        return 'hi all';
     }
 }
 
-let taskChild = new TaskChild();
-console.log( taskChild.location ); // jakarta barat
+Task.id = 90; // static property
+
+console.log(Task.get_default_id()); // hi all
+console.log(Task.id ); // 99
