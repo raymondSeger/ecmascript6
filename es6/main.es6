@@ -1,11 +1,7 @@
 'use strict';
-let price = 6.99;
-let quantity = 30;
+let categories = ['hardware', 'software', 'cloud'];
 
-// no need to put it like { "price" : price, "quantity" : quantity }
-let objectJSON = {
-    price,
-    quantity
-};
-
-console.log(objectJSON);
+// we can do it in jQuery, but now we can do it in ES6. "foreach" basically
+for( let category of categories) {
+    console.log(category);
+}
