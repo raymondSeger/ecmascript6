@@ -1,7 +1,5 @@
 'use strict';
-
-let name    = 'raymond seger';
 {
-    let name = "billy seger"
+    let name = "billy"
 }
-console.log(name); // show raymond seger because let have function scope
+console.log(name); // show referenceError because let have function scope
