@@ -1,5 +1,7 @@
 'use strict';
 
-const AGE   = 26;
-console.log(name); // we will get referenceError. This prevents bug, which is better than var
 let name    = 'raymond seger';
+{
+    let name = "billy seger"
+}
+console.log(name); // show raymond seger because let have function scope
