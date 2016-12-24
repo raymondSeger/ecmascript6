@@ -1,9 +1,7 @@
 'use strict';
-var function_with_default_param = function(productId = 1000) {
-    console.log(productId);
+let function_with_spread_1 = (param1, ...params) => {
+    console.log(param1 + " and " + params.length); // 1 and 3
+    console.log(params); // ["name", "raymond", "jett"]
 };
 
-var function_with_default_param_2 = (productId = 3000) => console.log(productId);
-
-function_with_default_param();
-function_with_default_param_2();
+function_with_spread_1('1', 'name', 'raymond', 'jett');
