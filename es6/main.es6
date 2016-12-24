@@ -1,7 +1,6 @@
 'use strict';
-let categories = ['hardware', 'software', 'cloud'];
+let octal_value = 0o10; // starts with 0o
+console.log(octal_value); // 8
 
-// we can do it in jQuery, but now we can do it in ES6. "foreach" basically
-for( let category of categories) {
-    console.log(category);
-}
+let binary_value = 0b10; // starts with 0b
+console.log(binary_value); // 2
